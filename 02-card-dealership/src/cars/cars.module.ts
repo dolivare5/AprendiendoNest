@@ -22,13 +22,14 @@ usados en otros módulos.*/
     un proveedor: servicios, repositorios, fábricas, ayudantes, etc. La idea principal de un proveedor es que se puede
     inyectar como una dependencia; esto significa que los objetos pueden crear varias relaciones entre sí, y la función
     de "cableado" instancias de objetos se puede delegar en gran medida al sistema de tiempo de ejecución Nest. */
-    providers: [CarsService]
+    providers: [CarsService],
     
     /* En cuanto a los Servicios, son clases con decoradores que proporcionan una funcionalidad específica, se le pueden
     inyectar en otros Componentes, se pueden exportar e importar de un módulo para que puedan ser utilizados en otros
     módulos y se pueden declarar en un módulo. Además, son clases con decoradores que proporcionan una funcionalidad
     específica que se pueden inyectar en otros servicios, exportar e importar de un módulo para que otros módulos
     puedan usarlos.*/
+    exports: [CarsService]
     
 
     /* Con respecto a los Componentes son clases con decoradores que proporcionan una funcionalidad específica, se le
